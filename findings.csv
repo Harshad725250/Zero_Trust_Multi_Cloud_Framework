@@ -1,0 +1,3 @@
+timestamp,resource_type,resource_name,resource_arn,finding
+2025-11-01T18:35:20.320382,ManagedPolicy,TestWildcardPolicy,arn:aws:iam::050752635595:policy/TestWildcardPolicy,wildcard resource
+2025-11-01T18:35:20.320382,ManagedPolicy,TestWildcardPolicy,arn:aws:iam::050752635595:policy/TestWildcardPolicy,Policy allows '*' actions on '*' resources.

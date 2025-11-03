@@ -1,0 +1,15 @@
+{
+  "total_access_requests": 1,
+  "deny_count": 1,
+  "review_count": 0,
+  "allow_count": 0,
+  "total_remediations": 0,
+  "per_cloud": {
+    "AWS": 1,
+    "Azure": 0,
+    "GCP": 0
+  },
+  "events_by_type": {
+    "ACCESS_REQUEST": 1
+  }
+}

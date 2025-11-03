@@ -1,0 +1,9 @@
+Metric,Value
+total_requests,50
+total_iam_findings,2
+total_iac_findings,29
+total_remediations,5
+deny_rate_%,6.0
+allow_rate_%,2.0
+review_rate_%,0.0
+risk_reduction_factor,83.87

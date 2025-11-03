@@ -1,0 +1,31 @@
+=== Zero Trust Multi-Cloud Framework Evaluation Report ===
+
+--- IaC Auditor ---
+Total Findings: 29
+S3 Issues: 14
+Security Group Issues: 6
+IAM Policy Issues: 9
+
+--- Policy Decision Point (PDP) ---
+Total Decisions: 50
+Allow: 1
+Deny: 3
+Review: 0
+Avg Decision Interval (s): 0
+
+--- Policy Enforcement Point (PEP) ---
+Total Access Requests: 20
+Allow: 5
+Deny: 15
+Review: 0
+
+--- Auto Remediation Module ---
+Total Remediations: 6
+Deny Remediations: 5
+Review Remediations: 1
+Clouds Covered: 3
+
+--- Central Monitoring ---
+Total Logged Events: 6
+Events Per Module: {'PEP': 6}
+

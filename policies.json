@@ -1,0 +1,29 @@
+{
+  "default_action": "deny",
+  "policies": [
+    {
+      "id": "policy2",
+      "description": "Deny iam:PassRole",
+      "conditions": {
+        "action": ["iam:passrole"]
+      },
+      "decision": "deny"
+    },
+    {
+      "id": "policy3",
+      "description": "Allow read-only actions",
+      "conditions": {
+        "action": ["s3:getobject", "ec2:describeinstances"]
+      },
+      "decision": "allow"
+    },
+    {
+      "id": "policy1",
+      "description": "Deny wildcard actions",
+      "conditions": {
+        "action": ["*"]
+      },
+      "decision": "deny"
+    }
+  ]
+}

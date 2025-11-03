@@ -1,0 +1,39 @@
+{
+  "pdp_decisions": {
+    "DENY": 3,
+    "ALLOW": 1,
+    "192.168.1.12": 36,
+    "8.8.8.8": 5,
+    "192.168.1.10": 1,
+    "AZURE-VM-IP": 1,
+    "10.0.0.25": 1,
+    "10.0.0.50": 1,
+    "203.0.113.5": 1
+  },
+  "total_requests": 50,
+  "iam_findings": {
+    "wildcard resource": 1,
+    "Policy allows '*' actions on '*' resources.": 1
+  },
+  "total_iam_findings": 2,
+  "iac_findings": {
+    "Security group allows 0.0.0.0/0 (open to world)": 6,
+    "S3 bucket with public ACL (public-read)": 9,
+    "S3 bucket with public ACL (public-read-write)": 5,
+    "IAM policy allows wildcard permissions (*)": 9
+  },
+  "total_iac_findings": 29,
+  "auto_remediations": {
+    "GCP": 2,
+    "Azure": 1,
+    "AWS": 2
+  },
+  "total_remediations": 5,
+  "monitoring_events": {
+    "ACCESS_REQUEST": 6
+  },
+  "deny_rate_%": 6.0,
+  "allow_rate_%": 2.0,
+  "review_rate_%": 0.0,
+  "risk_reduction_factor": 83.87
+}
