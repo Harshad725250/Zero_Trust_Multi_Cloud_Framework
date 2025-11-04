@@ -49,3 +49,39 @@ timestamp,user,action,resource,decision,matched_policy,reason
 2025-10-25T10:44:21.265362+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
 2025-11-01T18:35:25.339244+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,deny,Access attempted outside business hours
 2025-11-01T19:37:14.029867+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-00,deny,Access attempted outside business hours
+2025-11-03T19:51:01.939430+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,deny,Access attempted outside business hours
+2025-11-04T08:57:12.244945+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:01:08.170596+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:02:05.514827+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:33:59.752853+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:34:00.902052+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T09:34:02.055894+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T09:34:03.206721+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T09:34:04.359402+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T09:37:20.220796+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:37:21.371602+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T09:37:22.522988+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T09:37:23.673340+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T09:37:24.824064+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T09:50:11.650623+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:50:12.818355+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T09:50:13.992917+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T09:50:15.152412+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T09:50:16.312442+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T09:51:43.770659+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T09:51:44.922942+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T09:51:46.075197+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T09:51:47.225587+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T09:51:48.377847+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T10:17:27.707240+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T10:17:28.861018+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T10:17:30.012336+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T10:17:31.163749+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T10:17:32.316180+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T10:46:27.655341+00:00,alice,s3:GetObject,arn:aws:s3:::secure-bucket,192.168.1.12,device-laptop-001,allow,Context validated
+2025-11-04T10:46:28.812578+00:00,bob,s3:DeleteObject,arn:aws:s3:::secure-bucket/private,172.16.5.10,device-laptop-002,deny,Untrusted network source (172.16.5.10)
+2025-11-04T10:46:29.965678+00:00,charlie,ec2:StartInstances,arn:aws:ec2:::instance/i-1234567890,10.0.0.22,device-admin-001,deny,Deny wildcard actions
+2025-11-04T10:46:31.117224+00:00,david,iam:AttachRolePolicy,arn:aws:iam:::role/AdminRole,192.168.1.10,unknown-device-999,deny,Deny wildcard actions
+2025-11-04T10:46:32.267565+00:00,eve,s3:ListBucket,arn:aws:s3:::public-bucket,8.8.8.8,device-laptop-001,deny,Untrusted network source (8.8.8.8)
+2025-11-04T10:46:33.422763+00:00,frank,s3:GetObject,arn:aws:s3:::semi-trusted-bucket,192.168.1.50,unknown-device-123,review,Unrecognized device (unknown-device-123)
+2025-11-04T10:46:34.576451+00:00,ivan,ec2:DescribeInstances,arn:aws:ec2:::instance/i-9999999999,10.0.0.8,device-admin-002,review,Unrecognized device (device-admin-002)

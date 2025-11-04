@@ -61,11 +61,11 @@ def enforce_access(user, action, resource, ip, device):
     print(f"[PEP] Access request by {user} for {resource} -> {decision} ({reason})")
 
     if decision == "DENY":
-        print("[PEP] Request blocked ❌")
+        print("[PEP] Request blocked")
     elif decision == "REVIEW":
-        print("[PEP] Access under manual review ⚠️")
+        print("[PEP] Access under manual review")
     else:
-        print("[PEP] Access granted ✅")
+        print("[PEP] Access granted")
 
     # Trigger Auto Remediation if needed
     if decision in ["DENY", "REVIEW"]:

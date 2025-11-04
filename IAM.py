@@ -44,7 +44,7 @@ def scan_iam(output_csv = "findings.csv"):
     iam = boto3.client("iam")
 
     rows = []
-    timestamp = dt.datetime.utcnow().isoformat()
+    timestamp = dt.datetime.now(dt.timezone.utc).isoformat()
 
     print("[*] Scanning IAM Policies...")
     paginator = iam.get_paginator("list_policies")
